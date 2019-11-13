@@ -12,7 +12,7 @@ typedef struct {
   char *last_name;
   char *major;
   int year;
-    // TODO: add fields here for major and year // done?
+    // TODO: add fields here for major and year// done
 } Student;
 
 void print_student(Mode m, Student s) {
@@ -27,7 +27,7 @@ void print_student(Mode m, Student s) {
       printf("%d %s %s\n", s.year, s.first_name, s.last_name);
           break;  
 
-  // TODO: handle other cases // done?
+  // TODO: handle other cases // done
   }
 }
 
@@ -39,16 +39,6 @@ You will need to check argc to determine the number of students passed at runtim
 The fields are all strings (char[]), except year is a number (int)
 */
 int main(int argc, char **argv) {
-
-  /*Student s1;
-  s1.first_name = argv[2];
-  s1.last_name = argv[3];
-  s1.major = argv[4] ;
-  s1.year = (int)(atof(argv[5]));
-
-  Mode mode = (int)(atof(argv[1]));
-
-  print_student(mode,s1); */
 
   Mode mode = (int)(atof(argv[1]));
 
@@ -83,9 +73,6 @@ int main(int argc, char **argv) {
   }
 
   
-    // TODO: parse argv to populate student structs 
-  // for now, here's two hardcoded students:
-
-  
+    // TODO: parse argv to populate student structs // done 
   return 0;
 }
